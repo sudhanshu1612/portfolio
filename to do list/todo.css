@@ -1,0 +1,113 @@
+/* body {
+    background: linear-gradient(to right, #19b0e6, #00b3b3);
+    height: 100vh;
+    margin: 0;
+  } */
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(25, 176, 230), rgb(0, 179, 179));
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mainBox{
+    width: 35%;
+    max-height:  60%;
+    overflow-y: scroll;
+    overflow-x:hidden;
+     margin: 1rem; 
+    /* margin-bottom: 3rem; */
+    padding: 1rem;
+    display: flex;
+    min-height: 15rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgb(7, 125, 136);
+    /* display: flex; */
+      flex-direction: column;
+      align-items: center;  
+  }
+  #firstBox{
+    display: flex;
+    width:93%;
+    height: 4rem;
+    margin: 0.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 0.2rem solid #19b0e6;
+   }
+  #firstBox input{
+    width: 70%;
+    height: 3.5rem;
+    border-radius: 10px;
+    font-size:1.8rem;
+    border: none;
+    outline: none;
+    color: #7d827d;
+    
+  }
+  #firstBox button{
+    width: 35%;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #19b0e6;
+    font-size:1.5rem;
+    color: white;
+    /* border:none; */
+    }
+
+    #firstBox button:hover{
+        opacity: 0.8;
+        box-shadow: 3px 3px 3px black;
+    }
+
+    .work
+    {
+    display: flex;
+      width: 85%;
+      margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+      padding:0.5rem;
+       /* height: 2rem;  */
+      font-size: 1.5rem;
+      border: 2px solid #19b0e6;
+      border-radius: 10px;
+       align-items: center; 
+    }
+    .work button{
+      height: 2rem;
+      margin:0.1rem;
+      padding: 0.1rem;
+        width: 15%;
+        border: none;
+        background-color: #19b0e6;
+        color: white;
+        border-radius: 10px;
+        
+    }
+    .work p{
+      margin:0.1rem;
+      padding: 0.1rem;
+        width: 83%;
+         color: #7d827d;
+    }
+
+    .work button:hover{
+      opacity: 0.8;
+        box-shadow: 2px 2px 2px black;
+    }
+@media(max-width : 500px) {
+    #mainBox{
+      width: 90%;
+    }
+  }  
+ 
+  
+  

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh; /* Changed from height to min-height */
+            background: linear-gradient(135deg, #1e1e1e, #2c3e50);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            width: 50%; /* Changed from max-width: 900px for responsiveness */
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px; /* Slightly reduced padding */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 20px auto; /* Centered with auto margins */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap; /* Added to handle smaller screens */
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px; /* Ensures text doesn’t collapse too much */
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #00d4ff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #00d4ff;
+            display: inline-block;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .project h3 {
+            color: #fff;
+            font-size: 1.4em;
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+        } 
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        };
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SUDHANSHU RANJAN</h1>
+
+        <!-- About Me Section (Side by Side) -->
+        <div class="section about-section">
+            <img src="sudhanshu.jpg" alt="My Photo" class="profile-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am Pursuing my Bachelor's Degree in Computer Science and Engineering with Specialization in Data Science (Dual Degree) at 
+                    National Institute of Technology Patna.</p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1: Nike Website Clone</h3>
+                <p>Nike Website Clone using HTML and CSS</p>
+                <a href="Nike website/nike.html" target="_blank">Explore Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: To Do List</h3>
+                <p>To Do List Using HTML CSS and JS</p>
+                <a href="to do list/todo.html" target="_blank">Explore Project</a>
+            </div>
+            <!-- <div class="project">
+                <h3>Project 3: Stone Paper Scissor</h3>
+                <p>Stone Paper Scissor Game using HTML CSS and JS</p>
+                <a href="rock-paper-scissor/rockpaperscissor.html" target="_blank">Explore Project</a>
+            </div> -->
+            <div class="project">
+                <h3>Project 3: Calculator</h3>
+                <p>Calculator using HTML CSS and JS</p>
+                <a href="calculator/calculator.html" target="_blank">Explore Project</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

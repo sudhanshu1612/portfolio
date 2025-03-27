@@ -1,0 +1,531 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.headerBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    background-color: #f6f2f2;
+    color: #111111;
+    font-size: 12px;
+    font-weight: 550;
+    /* margin: 0.5rem; */
+    padding: 0.4rem 4rem 0.4rem 4rem;
+}
+.headerBox .headerBoxLinks a{
+    color: #111111;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.headerBox .headerBoxImage img{
+    height: 16px;
+}
+
+.headerBox .headerBoxLinks :hover{
+    opacity: 0.5;
+    transform: scale(0.1);
+}
+
+.headerBox .headerBoxLinks span{
+    pointer-events: none;
+}
+
+@media(max-width: 900px) {
+    .headerBox{
+        display:none;
+    }
+  
+}
+
+.header2{
+    padding-right: 4rem;
+    padding-left: 4rem;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    color:#111111;
+    background-color: #ffffff;
+}
+
+.header2Sec1{
+    width: 25%;
+}
+
+.header2Sec1 img{
+    height: 100%;
+}
+
+
+.header2Sec2{
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+    text-decoration: none;
+    color: #111111;
+    font-weight: 550;
+    }
+}
+
+.header2Sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3searchBox{
+    width: 70%;
+    height: 2.5rem;
+    box-shadow: 1px 1px 1px grey;
+ /* border:2px solid black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .Icon1{
+    height: auto;
+    width: auto;
+    margin: 0rem 1rem 0rem 2rem;
+    transform: scale(1.5);
+    border-radius: 50%;
+}
+
+.Icon2{
+    margin: 0rem 1rem 0rem 1rem;
+    transform: scale(1.5);
+    border-radius: 50%;
+}
+
+.icon1:hover{
+    color: pink;
+    background-color:#1e1e1f;
+}
+
+.icon2:hover{
+    background-color: #262626;
+}
+
+.sec3searchIcon{
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 10px;
+    position: relative;
+   width: 10%;
+   font-size: 1.5rem;
+   transform: scale(1);
+}
+
+.sec3Input {
+    padding-left: 5px;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    font-size: 1.7rem;
+    font-weight: 550rem;
+    border: none;
+    outline: none;
+}
+
+@media(max-width: 900px) {
+    .header2Sec2{
+        display:none;
+    }
+    .header2Sec1{
+        width: 50%;
+    }
+    .header2sec3{
+        width: 50%;
+    }
+  
+}
+
+.header3{
+    display: flex;
+    overflow-y: scroll;
+}
+
+
+.header3-1{
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    height:5rem;
+    padding: 0.5rem;
+    background-color: #f6f2f2;
+}
+ /* .header3-2
+{
+    width: 50%;
+    height: 5rem;
+    background-color:#f6f2f2;
+    text-align: center;
+    padding: 0.5rem;
+}  */
+ .header3-1 .para1
+ {
+    font-size: 1.2rem;
+    padding: 0.2ren;
+ }
+ .header3-1 .para2{
+    font-size: 0.8rem;
+    padding: 0.15rem;
+ }
+
+ .header3-1 .para3{
+    font-size: 0.8rem;
+    padding: 0.15rem;
+ }
+
+ .header3-2{
+    display: none;
+    font-weight: 500;
+    height: 5rem;
+    width: 100vw;
+    background-color: #f6f2f2;
+    padding: 0.5rem;
+    text-align: center;
+
+ }
+
+ .header3-2 .para1{
+     font-size: 1.5rem;
+     padding: 0.4rem;
+ }
+
+ .header3-2 .para2{
+    font-size: 1rem;
+     padding: 0.3rem;
+
+ }
+
+ .header4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    height: 10rem;
+    background-color: white;
+ }
+
+ .header4 img{
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+ }
+
+ .header4 a{
+    font-size: 1rem;
+    font-weight: 550;
+    text-decoration: none;
+    color: #111111;
+    padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+ }
+
+ .header4 .linkContainer{
+    height: 100vh;
+    /* background-color: pink; */
+ }
+
+ .header4 a:hover{
+    opacity: 0.6;
+ }
+
+ .translateHead{
+    animation: expand-width 1s ease-in-out;
+    overflow: hidden;
+ }
+ 
+ .header3
+ {
+    display: flex;
+    overflow: hidden;
+    height: 5rem;
+ }
+
+ @keyframes expand-width {
+    from {
+        width: 0;
+    }
+    to {
+       width: 100%;
+    }
+};
+
+.imageBox1 {
+    width: 100%;
+    height: 20rem;
+    background-color: violet;
+}
+
+/* content box */
+
+.contentBox{
+    /* background-color: aquamarine; */
+    /* padding: 1.25%; */
+    margin: 2.5%;
+    height: 45rem;
+    /* width: 95%; */
+}
+
+.cbHeader{
+    margin-left: 1.5rem;
+    font-size: 3rem;
+    height: 10%;
+    display: flex;
+    font-size: 100%;
+    font-weight: 1000;
+    align-items: center;
+}
+
+.cbCards{
+    height: 90%;
+    display: flex;
+    overflow-y: none;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+    padding-left: 0.25rem;
+}
+    
+    
+
+.card
+{
+    padding: 0.5rem;;
+    margin: 0.8rem;
+    min-width: 30%;
+    height: 85%;
+
+    /* background-color: red; */
+    font-style: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform:scale(1.025);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.mrp{
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.description1{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+   font-size: 0.8rem;
+}
+
+.description2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: rgb(64, 63, 63);
+}
+
+.fa-solid fa-indian-rupee-sign
+{
+    transform: scale(0.4)   
+}
+
+.contentBox2{
+    margin: 1rem;
+    padding: 1rem; 
+    height: 50rem;
+    width: 100vw;
+}
+
+.contentBox2 .heading {
+    height: 10%;
+    font-weight: 1000;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contentBox2 .boxContainer{
+    height: 85%;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    /* margin: 1.25%;
+    padding: 1.25%; */
+}
+
+.contentBox2 .boxContainer .box {
+    height: 99%;
+    width: 99%;
+    background-color: pink;
+}
+
+.contentBox2 .boxContainer .box1{
+    background-image: url('s1.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+}
+
+.contentBox2 .boxContainer .box2{
+    background-image: url('s5.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+}
+
+.contentBox2 .boxContainer .box1 button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    background-color: white;
+    margin-top: 35rem;
+    margin-left: 3rem;
+}
+
+.contentBox2 .boxContainer .box2 button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    margin-top: 35rem;
+    margin-left: 3rem;
+}
+
+.contentBox2 .boxContainer .box button:hover {
+    opacity: 0.5;
+}
+
+.footer1
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+     padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.footer1 .linkc h2 {
+    margin: 1.8rem 0rem 1.8rem 0rem;
+   
+}
+
+.footer1 .linkc h2 a {
+    text-decoration: none;  
+    color: black;  
+}
+
+.footer1 .linkc ul li {
+    margin:1rem 0rem 1rem 0rem; 
+}
+
+.footer1 .linkc ul li a {
+    font-family:  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #707072;
+    font-size: 1rem;
+    
+}
+
+.footer1 .linkc ul li a:hover {
+    color:black;
+}
+
+.footer1 .linkc ul {
+    list-style-type: none;
+}
+
+.footer2{
+    background-color: #f1f1f3;
+    padding: 0rem 4rem 0rem 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+.footer2 a{
+    margin: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+    color: #707072;
+}
+
+.footer2 a:hover{
+    color: black;
+}
+
+.footer2 select{
+
+    color: #434344;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.header2{
+    position: ;
+}
+.linkContainer{
+    position: fixed;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
