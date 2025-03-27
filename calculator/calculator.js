@@ -46,6 +46,10 @@ container.addEventListener("click" , (e) =>
         input.value=0;
         s=" ";
     }
+    else if (e.target.innerText === container.innerText)
+    {
+        e.target.style.PointerEvents="none";
+    }
     else
     {
      console.log(e.target.innerText);
